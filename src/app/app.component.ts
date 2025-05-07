@@ -12,7 +12,12 @@ x=signal(10);
 y=signal(20);
 
 z=computed(()=>this.x()+this.y());
-
+users=["Anil","Bhavya","Chinmay"];
+userDeta=[
+  {name:"Chinmay",age:"23",location:"Bangalore"},
+  {name:"Anil",age:"33",location:"Pune"},
+  {name:"Bhavya",age:"21",location:"Dehradun"}
+]
 //   count=signal(10);
 //   x=10;
 

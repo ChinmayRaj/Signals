@@ -1,6 +1,31 @@
-<h1>Basics of Signals</h1>
+<h1>Basics of for loops</h1>
 
 <!-- <h3>The value of the Signal is {{count()}}</h3> -->
-<button (click)="showValue()">Show value</button>
+<!-- <button (click)="showValue()">Show value</button> -->
 <!-- <button (click)="increaseSignal()">Increment Signal</button>
 <button (click)="decreaseSignal()">Decrement Signal</button> -->
+@for(user of users;track user){
+    <h2>{{user}}</h2>
+}
+<h1>List of userdetails</h1>
+@for(detail of userDeta;track detail){
+    <h3>Name is {{detail.name}}</h3>
+    <h3>Age is {{detail.age}}</h3>
+    <h3>Location is {{detail.location}}</h3>
+    <h4>---------------------------------------------</h4>
+}
+
+<h3>List of locations </h3>
+@for(detail of userDeta;track detail){
+    <h3>{{detail.location}}</h3>
+}
+
+<h1>Event listener with for loop</h1>
+@for(detail of userDeta;track detail;let id=$index){
+    <h3>Serial Number is {{id+1}}</h3>
+    <h3>Name is {{detail.name}}</h3>
+    <h3>Age is {{detail.age}}</h3>
+    <h3>Location is {{detail.location}}</h3>
+    <h4>---------------------------------------------</h4>
+}
+
